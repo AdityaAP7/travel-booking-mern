@@ -8,7 +8,22 @@ const useFetch = (url) => {
    useEffect(() => {
       const fetchData = async() => {
          setLoading(true)
+const saveContact = (contactId) => {
+    // Update the contact in our array
+    const updatedContacts = contacts.map((contact) => {
+      if (contact.id === contactId) {
+        return {
+          ...contact,
+          name: tempName,
+          phone: tempPhone,
+        };
+      }
+      return contact;
+    });
 
+    setContacts(updatedContacts);
+    setEditingContact(null);
+  };
          try {
             const res = await fetch(url)
 
