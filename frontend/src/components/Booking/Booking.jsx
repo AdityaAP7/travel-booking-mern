@@ -10,6 +10,10 @@
    const handleChange = e => {
       setBooking(prev => ({ ...prev, [e.target.id]: e.target.value }))
    }
+
+   const handleChange = e => {
+      setBooking(prev => ({ ...prev, [e.target.id]: e.target.value }))
+   }
 import React, { useState, useContext } from 'react'
 import './booking.css'
 import { Form, FormGroup, ListGroup, ListGroupItem, Button } from 'reactstrap'
