@@ -10,6 +10,10 @@
             user: null,
             loading: true,
             error: null
+         }  return {
+            user: null,
+            loading: true,
+            error: null
          }import { createContext, useEffect, useReducer } from 'react'
 
 const initial_state = {
