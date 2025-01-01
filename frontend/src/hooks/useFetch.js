@@ -4,22 +4,7 @@ const useFetch = (url) => {
    const [data, setData] = useState([])
    const [error, setError] = useState(null)
    const [loading, setLoading] = useState(false)
-const saveContact = (contactId) => {
-    // Update the contact in our array
-    const updatedContacts = contacts.map((contact) => {
-      if (contact.id === contactId) {
-        return {
-          ...contact,
-          name: tempName,
-          phone: tempPhone,
-        };
-      }
-      return contact;
-    });
 
-    setContacts(updatedContacts);
-    setEditingContact(null);
-  };
    useEffect(() => {
       const fetchData = async() => {
          setLoading(true)
