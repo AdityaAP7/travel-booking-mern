@@ -13,6 +13,11 @@
     setTempName(contact.name);
     setTempPhone(contact.phone);
   };
+ const startEditing = (contact) => {
+    setEditingContact(contact.id);
+    setTempName(contact.name);
+    setTempPhone(contact.phone);
+  };
   return {
             user: null,
             loading: true,
