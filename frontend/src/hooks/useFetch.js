@@ -8,10 +8,7 @@ const useFetch = (url) => {
    useEffect(() => {
       const fetchData = async() => {
          setLoading(true)
-      const fetchData = async() => {
-         setLoading(true)
-               const fetchData = async() => {
-         setLoading(true)
+
          try {
             const res = await fetch(url)
 
