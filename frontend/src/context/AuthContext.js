@@ -1,4 +1,8 @@
-import { createContext, useEffect, useReducer } from 'react'
+  return {
+            user: null,
+            loading: true,
+            error: null
+         }import { createContext, useEffect, useReducer } from 'react'
 
 const initial_state = {
    // user: localStorage.getItem("user") !== undefined ? JSON.stringify(localStorage.getItem("user")) : null,
